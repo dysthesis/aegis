@@ -19,11 +19,8 @@
         ];
       in
         fold
-        # Fold function
         (curr: acc: acc // (enable curr))
-        # Accumulator
         {}
-        # List to fold on
         tools;
     };
   };

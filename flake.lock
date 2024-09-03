@@ -1,5 +1,141 @@
 {
   "nodes": {
+    "blocklist:adaway": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1682924229,
+        "narHash": "sha256-sYIJnq9Jq7PeqvCWobqA2I0lRVjB8BRqGDXYB6ptTB8=",
+        "owner": "adaway",
+        "repo": "adaway.github.io",
+        "rev": "afbe891b58ab5d0207a98a4a2fac410a55710914",
+        "type": "github"
+      },
+      "original": {
+        "owner": "adaway",
+        "repo": "adaway.github.io",
+        "type": "github"
+      }
+    },
+    "blocklist:adguard": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-XjDXso3A/G0t61EzdCE1jw6hEUoTXlXM4eokKsBItew=",
+        "type": "file",
+        "url": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
+      }
+    },
+    "blocklist:danpollock": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-KfseKRVS8O4HkT+I55lwvYo7tkX5/ZX2Enhi9MQDDv0=",
+        "type": "file",
+        "url": "https://someonewhocares.org/hosts/hosts"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://someonewhocares.org/hosts/hosts"
+      }
+    },
+    "blocklist:easylist": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1725329205,
+        "narHash": "sha256-ruJ5H6+uBxrnUZ8L+mB1tRcwFYrdyODCkQ8SzdgTz8k=",
+        "owner": "easylist",
+        "repo": "easylist",
+        "rev": "860661753408f666ed7c36d05888c6c7623f21ac",
+        "type": "github"
+      },
+      "original": {
+        "owner": "easylist",
+        "repo": "easylist",
+        "type": "github"
+      }
+    },
+    "blocklist:nextdns": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1642814288,
+        "narHash": "sha256-+gMZrRIIjiqaBKyL5Kr5qQEIN5UveIR6fjMkP7SSthg=",
+        "owner": "nextdns",
+        "repo": "cname-cloaking-blocklist",
+        "rev": "d86cbb9fc05f768fe18adeffd7c936a63486702a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nextdns",
+        "repo": "cname-cloaking-blocklist",
+        "type": "github"
+      }
+    },
+    "blocklist:oisd": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-gwennFANsc07eEoKYPSrE0jUt+z2gaDxn1sUItwrzDI=",
+        "type": "file",
+        "url": "https://dblw.oisd.nl"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://dblw.oisd.nl"
+      }
+    },
+    "blocklist:oisd-basic": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-Yp1IIbE2hcMVjaEQgMwN5KVU+LnoAbjBnzSkITqC/4U=",
+        "type": "file",
+        "url": "https://dblw.oisd.nl/basic"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://dblw.oisd.nl/basic"
+      }
+    },
+    "blocklist:oisd-extra": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-B69RIg6qaV2+xmditX8ntJnV7xa/a0/C/gODaKJvHGM=",
+        "type": "file",
+        "url": "https://dblw.oisd.nl/extra"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://dblw.oisd.nl/extra"
+      }
+    },
+    "blocklist:peterlowe": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-l1J+oJRAyuWGrOtvLvdWm92orq3/bs8qV0ivIYaGRbk=",
+        "type": "file",
+        "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml"
+      }
+    },
+    "blocklist:stevenblack": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1725238500,
+        "narHash": "sha256-ib3D6IQj7MU0t5mjUnfFLyUP6ylBLfGe4+2vrS1Kbz8=",
+        "owner": "StevenBlack",
+        "repo": "hosts",
+        "rev": "5752297c81bc1d1a65e34e924b2094b2278c4424",
+        "type": "github"
+      },
+      "original": {
+        "owner": "StevenBlack",
+        "repo": "hosts",
+        "type": "github"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": "nixpkgs-lib"
@@ -48,6 +184,16 @@
     },
     "root": {
       "inputs": {
+        "blocklist:adaway": "blocklist:adaway",
+        "blocklist:adguard": "blocklist:adguard",
+        "blocklist:danpollock": "blocklist:danpollock",
+        "blocklist:easylist": "blocklist:easylist",
+        "blocklist:nextdns": "blocklist:nextdns",
+        "blocklist:oisd": "blocklist:oisd",
+        "blocklist:oisd-basic": "blocklist:oisd-basic",
+        "blocklist:oisd-extra": "blocklist:oisd-extra",
+        "blocklist:peterlowe": "blocklist:peterlowe",
+        "blocklist:stevenblack": "blocklist:stevenblack",
         "flake-parts": "flake-parts",
         "nixpkgs": "nixpkgs",
         "systems": "systems",
